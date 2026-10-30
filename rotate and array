@@ -1,0 +1,12 @@
+n, k = map(int, input().split())
+arr = list(map(int, input().split()))
+
+k = k % n
+
+if k == 0:
+    rotated = arr
+else:
+    rotated = arr[-k:] + arr[:-k]
+
+print(*rotated)
+

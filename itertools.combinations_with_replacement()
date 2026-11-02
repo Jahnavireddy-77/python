@@ -1,0 +1,7 @@
+import itertools
+s, k = input().split()
+k = int(k)
+s = sorted(s)
+result = itertools.combinations_with_replacement(s, k)
+for i in result:
+    print(''.join(i))

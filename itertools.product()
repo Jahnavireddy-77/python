@@ -1,0 +1,8 @@
+import itertools
+
+a = list(map(int, input().split()))
+b = list(map(int, input().split()))
+
+result = itertools.product(a, b)
+
+print(*result)

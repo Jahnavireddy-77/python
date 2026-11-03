@@ -1,0 +1,13 @@
+import itertools
+N=int(input())
+letters=input().split()
+K=int(input()
+count=0
+total=0
+result=itertools.combinations(range(N),k)
+for i in result:
+    total+=1
+    for j in i:
+      count+=1
+      break
+print(count/total)

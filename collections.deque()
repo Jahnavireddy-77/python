@@ -1,0 +1,15 @@
+from collections import deque
+N=int(input())
+
+lists=deque()
+for i in range(N):
+    operation=input().split()
+    if operation[0]=="append":
+        lists.append(int(operation[1]))
+    elif operation[0]=="pop":
+        lists.pop()
+    elif operation[0]=="popleft":
+        lists.popleft()
+    elif operation[0]=="appendleft":
+        lists.appendleft(int(operation[1]))
+print(*lists)

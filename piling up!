@@ -1,0 +1,19 @@
+from collections import deque
+T=int(input())
+for i in range(T):
+    n=int(input())
+    blocks=deque(map(int,input().split()))
+    current=float("inf")
+    while blocks:
+        if blocks[0]>=blocks[-1]:
+            pick=blocks.popleft()
+        else:
+            pick=blocks.pop()
+        if pick<=current:
+            current=pick
+        else:
+            print("No")
+            break
+    else:
+        print("Yes")
+      

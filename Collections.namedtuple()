@@ -1,0 +1,12 @@
+from collections import namedtuple
+N=int(input())
+columns=input().split()
+total=0
+Student = namedtuple('Student', columns)
+for i in range(N):
+    data=input().split()
+    student=Student(*data)
+    total+=int(student.MARKS)
+average=total/N
+print(f"{average:.2f}")
+    

@@ -1,0 +1,5 @@
+import datetime
+MM,DD,YYYY=map(int,input().split())
+date=datetime.date(YYYY,MM,DD)
+day=date.strftime("%A")
+print(day.upper())

@@ -1,0 +1,8 @@
+import numpy
+n,m=map(int,input().split())
+arr = []
+for i in range(n):
+    row = list(map(int, input().split()))
+    arr.append(row)
+result=numpy.min(arr,axis=1)
+print(max(result))

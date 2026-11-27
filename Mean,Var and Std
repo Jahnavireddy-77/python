@@ -1,0 +1,11 @@
+import numpy
+n,m=map(int,input().split())
+arr=[]
+for i in range(n):
+    arr.append(list(map(int,input().split())))
+result1=numpy.mean(arr,axis=1)
+result2=numpy.var(arr,axis=0)
+result3=round(numpy.std(arr), 11)
+print(result1)
+print(result2)
+print(result3)
